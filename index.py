@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from flask import Flask, render_template, request, redirect, send_from_directory, url_for, make_response
 from pymongo import MongoClient
 
