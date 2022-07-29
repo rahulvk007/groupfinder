@@ -7,4 +7,3 @@ app = Flask(__name__, static_folder='static')
 def resume():
     return render_template('home.html')
 
-app.run()
