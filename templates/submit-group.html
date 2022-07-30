@@ -12,28 +12,43 @@
     </div>
     <hr/>
     <div class="row justify-content-center align-items-center h-100">
-      <form method="POST">
+      <form method="POST" autocomplete="off">
         <div class="form-group row">
           <label for="slot" class="col-4 col-form-label">Slot</label> 
           <div class="col-12">
-            <input id="slot" name="slot" type="text" class="form-control">
+            <input id="slot" name="slot" type="text" class="form-control" required="required">
           </div>
         </div>
         <div class="form-group row">
           <label for="faculty" class="col-4 col-form-label">Faculty</label> 
           <div class="col-12">
-            <input id="faculty" name="faculty" type="text" class="form-control">
+            <input id="faculty" name="faculty" type="text" class="form-control" required="required">
           </div>
         </div>
         <div class="form-group row">
           <label for="course-code" class="col-4 col-form-label">Course Code</label> 
           <div class="col-12">
-            <input id="course-code" name="course-code" type="text" class="form-control">
+            <input id="course-code" name="course-code" type="text" class="form-control" required="required">
           </div>
         </div> 
         <div class="form-group row">
+            <label for="link" class="col-4 col-form-label">Link</label> 
+            <div class="col-12">
+              <input id="link" name="link" placeholder="Whatsapp Group Link" type="text" class="form-control" required="required">
+            </div>
+          </div> 
+          <div class="form-group row">
+            <label for="select" class="col-4 col-form-label">Select</label> 
+            <div class="col-8">
+              <select id="select" name="select" class="custom-select" required="required">
+                <option value="Official">Offiical Group</option>
+                <option value="Unofficial">Students Group</option>
+              </select>
+            </div>
+          </div> 
+        <div class="form-group row">
           <div class="offset-4 col-8">
-            <button name="submit" type="submit" class="btn btn-primary">Search</button>
+            <button name="submit" type="submit" class="btn btn-primary">Submit Group</button>
           </div>
         </div>
       </form>

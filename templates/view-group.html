@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Slot</th>
+        <th scope="col">Faculty</th>
+        <th scope="col">Course Code</th>
+        <th scope="col">Link</th>
+        <th scope="col">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for i in l %}
+      <tr>
+        <td>{{ i.slot }}</td>
+        <td>{{ i.faculty }}</td>
+        <td>{{ i.course_code }}</td>
+        <td><a href="{{ i.link }}">Click Here</a></td>
+        <td>{{ i.desc }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% endblock %}
